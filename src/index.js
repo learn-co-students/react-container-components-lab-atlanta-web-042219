@@ -1,13 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App.js'
 
-import LatestMovieReviewsContainer from './components/LatestMovieReviewsContainer';
-import SearchableMovieReviewsContainer from './components/SearchableMovieReviewsContainer';
-
-ReactDOM.render(
-  <div className="app">
-    <SearchableMovieReviewsContainer />
-    <LatestMovieReviewsContainer />
-  </div>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App/>, document.getElementById('root'));

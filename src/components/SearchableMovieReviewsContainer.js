@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
-import 'isomorphic-fetch';
-import MovieReviews from './MovieReviews'
+import React from 'react'
 
-const NYT_API_KEY = 'f98593a095b44546bf4073744b540da0';
-const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
-            + `api-key=${NYT_API_KEY}`;
-
-// Code SearchableMovieReviewsContainer Here
+export default function SearchableMovieReviewsContainer(props) {
+		return (
+			<form onSubmit={props.fetchReviews}>
+				<input name="searchField" required type="text" placeholder=" Search Reviews" />
+				<button type="submit"><i className="search icon"></i></button>
+			</form>
+		)
+}

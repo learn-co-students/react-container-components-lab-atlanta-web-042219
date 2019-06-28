@@ -1,0 +1,20 @@
+.review-container {
+	border: 0.20em solid black;
+	margin: 1em 15em 1em 15em;
+}
+.review-image {
+	background-color: black;
+}
+.review-image img {
+	width: 100%;
+}
+.review-content {
+	padding: 0.50em 2em 1em 2em;
+}
+.review-content a {
+	text-decoration: none;
+	color: black;
+}
+.review-content p {
+	font-size: 1.25em;
+}

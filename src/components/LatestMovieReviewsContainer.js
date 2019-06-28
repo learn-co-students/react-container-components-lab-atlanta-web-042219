@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
-import 'isomorphic-fetch';
-import MovieReviews from './MovieReviews'
+import React from 'react'
+import MovieReview from './MovieReview'
 
-const NYT_API_KEY = 'f98593a095b44546bf4073744b540da0';
-const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
-            + `api-key=${NYT_API_KEY}`;
-
-// Code LatestMovieReviewsContainer Here
+export default function LatestMovieReviewsContainer(props) {
+		return (
+			<div>
+				{props.reviews.map((review, index) => <MovieReview key={index} review={review} />)}
+			</div>
+		)
+}
